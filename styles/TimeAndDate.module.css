@@ -1,0 +1,32 @@
+.container {
+    margin-bottom: 50px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.formGroup {
+    width: 150px;
+}
+
+.dateWrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.datepicker {
+    padding: 1rem .74rem !important;
+    width: 200px;
+}
+
+.button {
+    width: 250px;
+    background-color: #4885a2;
+}
+
+.button:hover {
+    background-color: blueviolet;
+}
