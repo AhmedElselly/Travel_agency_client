@@ -59,22 +59,26 @@ const BestOffers: React.FC = () => {
   const generateItems = () => {
     return items?.map((item) => {
       return (
-        <Col xs={12} md={6} lg={4} style={{ maxHeight: 500 }}>
-          <Card className=' text-white'>
+        <Col xs={12} md={6} lg={4} style={{ maxHeight: 500, marginBottom: 20 }}>
+          <Card className='text-white' style={{border: 'none'}}>
             <Card.Img
               src={item.image}
               alt={item.title}
               style={{ maxHeight: 500, minHeight: 500 }}
             />
-            <Card.ImgOverlay>
-              <Card.Title>{item.title}</Card.Title>
-              <Card.Title>{item.subtitle}</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
+            <Card.ImgOverlay style={{ position: "relative", maxHeight: 500 }}>
+              <div style={{position: 'absolute', bottom: 50}}>
+                <Card.Title>{item.title}</Card.Title>
+                <Card.Title>{item.subtitle}</Card.Title>
+                <Row>
+                  <Col>
+                    <Card.Text>${item.price}</Card.Text>
+                  </Col>
+                  <Col>
+                    <Card.Text>{item.duration}</Card.Text>
+                  </Col>
+                </Row>
+              </div>
             </Card.ImgOverlay>
           </Card>
         </Col>

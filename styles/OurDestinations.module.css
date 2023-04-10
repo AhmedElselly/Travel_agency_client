@@ -1,0 +1,12 @@
+.container {
+    background-color: #13357b;
+    color: #fff;
+}
+
+.title {
+    font-size: 45px;
+}
+.text {
+    font-size: 32px;
+    font-weight: 200;
+}

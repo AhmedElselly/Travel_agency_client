@@ -1,0 +1,76 @@
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #051036;
+}
+
+.text {
+    color: #697488;
+}
+
+.tag {
+    min-width: 100px;
+    height: 40px;
+    background-color: transparent;
+    color: #051036;
+    border: none;
+    text-transform: capitalize;
+}
+
+.tag:hover, .tagActive:hover {
+    background-color: #051036;
+}
+
+.tagActive {
+    min-width: 100px;
+    height: 40px;
+    background-color: #3554d1;
+    text-transform: capitalize;
+}
+
+.card {
+    border: none;
+    
+}
+
+.image {
+    border-radius: 5px;
+    height: 300px;
+}
+
+.cardTitle {
+    color: #051036;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.cardSubtitle {
+    color: #697488;
+}
+
+.rating, .state, .reviews {
+    margin: 0;
+}
+
+.rating {
+    background: #051036;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.state {
+    color: #051036;
+    font-weight: 700;
+}
+
+.reviews {
+    color: #697488;
+}
+
+.price {
+    color: #3554d1;
+    font-weight: 700;
+    font-size: 18px;
+}

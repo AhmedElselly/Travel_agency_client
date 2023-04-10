@@ -55,9 +55,9 @@ const Header: React.FC = () => {
     <div className={styles.container}>
       <Carousel
         IndicatorIcon={false}
-        autoPlay
+        autoPlay={true}
         duration={2000}
-        stopAutoPlayOnHover={false}
+        stopAutoPlayOnHover={true}
         fullHeightHover={true}
         animation='slide'
         navButtonsAlwaysVisible={true}

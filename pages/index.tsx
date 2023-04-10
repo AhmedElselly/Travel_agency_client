@@ -6,6 +6,8 @@ import Header from "@/components/Header";
 import TimeAndDate from "@/components/TimeAndDate";
 import BestOffers from "@/components/BestOffers";
 import LakeGeneva from "@/components/LakeGeneva";
+import OurDestinations from "@/components/OurDestinations";
+import BestSeller from "@/components/BestSeller";
 
 
 export default function Home() {
@@ -22,6 +24,8 @@ export default function Home() {
       <hr/>
       <BestOffers/>
       <LakeGeneva/>
+      <BestSeller/>
+      <OurDestinations/>
     </Fragment>
   );
 }

@@ -1,7 +1,26 @@
 .container {
-    margin: 50px 0;
+    margin: 150px 0;
 }
 
 .banner {
     height: 500px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 50px auto;
+    
+}
+
+.title {
+    font-size: 45px;
+}
+
+.text {
+    font-size: 32px;
+    font-weight: 200;
 }
