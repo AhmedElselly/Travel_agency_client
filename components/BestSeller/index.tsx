@@ -3,13 +3,13 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import styles from "../../styles/BestSeller.module.css";
 
 interface Post {
-	title: string;
-	image: string;
-	city: string;
-	rating: number;
-	state: string;
-	reviews: number;
-	price: number
+  title: string;
+  image: string;
+  city: string;
+  rating: number;
+  state: string;
+  reviews: number;
+  price: number;
 }
 
 type Posts = Array<Post>;
@@ -122,24 +122,28 @@ const BestSeller: React.FC = () => {
       return (
         <Col sm={12} md={8} lg={3} className={`my-3`}>
           <Card className={styles.card} style={{ width: "100%" }}>
-            <Card.Img className={styles.image} variant='top' src={post.image} />
+            <div className={styles.imageContainer}>
+              <Card.Img
+                className={styles.image}
+                variant='top'
+                src={post.image}
+              />
+            </div>
             <Card.Body className={`p-0 mt-3 d-flex flex-column gap-3`}>
               <Card.Title className={styles.cardTitle}>{post.title}</Card.Title>
               <Card.Subtitle className={styles.cardSubtitle}>
                 {post.city}
               </Card.Subtitle>
               <div className={`d-flex gap-2 align-items-center`}>
-                <Card.Text className={styles.rating}>
-                  {post.rating}
-                </Card.Text>
-                <Card.Text className={styles.state}>
-                  {post.state}
-                </Card.Text>
+                <Card.Text className={styles.rating}>{post.rating}</Card.Text>
+                <Card.Text className={styles.state}>{post.state}</Card.Text>
                 <Card.Text className={styles.reviews}>
                   {post.reviews} reviews
                 </Card.Text>
               </div>
-							<Card.Text className={styles.price}>Starting from US${post.price}</Card.Text>
+              <Card.Text className={styles.price}>
+                Starting from US${post.price}
+              </Card.Text>
             </Card.Body>
           </Card>
         </Col>
