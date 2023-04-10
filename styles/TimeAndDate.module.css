@@ -24,9 +24,9 @@
 
 .button {
     width: 250px;
-    background-color: #4885a2;
+    background-color: #3554d1;
 }
 
 .button:hover {
-    background-color: blueviolet;
+    background-color: #051036;
 }
