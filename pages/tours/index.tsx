@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import styles from "../../styles/BestSeller.module.css";
-import CardContainer from "../CardContainer";
+import CardContainer from "@/components/CardContainer";
+import ListContainer from "@/components/ListContainer";
+import React from "react";
+import { Col, Row } from "react-bootstrap";
+import styles from '../../styles/ToursPage.module.css'
 
 interface Post {
   title: string;
@@ -15,8 +16,7 @@ interface Post {
 
 type Posts = Array<Post>;
 
-const BestSeller: React.FC = () => {
-  const tags = ["hotel", "tour", "activity", "car", "cruise", "flights"];
+const PostsList: React.FC = () => {
   const posts: Posts = [
     {
       title: "The Montcalm At Brewery London City",
@@ -99,49 +99,23 @@ const BestSeller: React.FC = () => {
       price: 92,
     },
   ];
-  const [selectedTag, setSelectedTag] = useState(tags[0]);
-
-  const handleSelect = (tag: string) => {
-    setSelectedTag(tag);
-  };
-
-  const generateTags = () => {
-    return tags?.map((tag) => {
-      return (
-        <Button
-          onClick={() => handleSelect(tag)}
-          className={selectedTag === tag ? styles.tagActive : styles.tag}
-        >
-          {tag}
-        </Button>
-      );
-    });
-  };
-
   const generatePosts = () => {
     return posts?.map((post) => {
       return (
-        <Col sm={12} md={8} lg={3} className={`my-3`}>
-          <CardContainer post={post} styles={styles} />
+        <Col sm={12} md={8} lg={4} className={`my-3`}>
+          <CardContainer post={post} />
         </Col>
       );
     });
   };
 
   return (
-    <Container>
-      <Row>
-        <Col>
-          <div className={styles.title}>Best Seller</div>
-          <div className={styles.text}>Find our best deals</div>
-        </Col>
-        <Col className={`d-flex gap-4 ${styles.tagsContainer}`}>
-          {generateTags()}
-        </Col>
+    <ListContainer>
+      <Row className={styles.wrapper}>
+        {generatePosts()}
       </Row>
-      <Row className={`my-5`}>{generatePosts()}</Row>
-    </Container>
+    </ListContainer>
   );
 };
 
-export default BestSeller;
+export default PostsList;
