@@ -26,14 +26,11 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-block: 10px;
 }
 
 .label {
     color: #051036;
     font-size: 15px;
     margin-bottom: 0;
-}
-
-.option {
-    
 }

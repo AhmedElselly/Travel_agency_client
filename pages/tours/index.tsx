@@ -5,6 +5,7 @@ import { Col, Row } from "react-bootstrap";
 import styles from '../../styles/ToursPage.module.css'
 
 interface Post {
+  _id: string;
   title: string;
   image: string;
   city: string;
@@ -19,6 +20,7 @@ type Posts = Array<Post>;
 const PostsList: React.FC = () => {
   const posts: Posts = [
     {
+      _id: '1',
       title: "The Montcalm At Brewery London City",
       image:
         "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -29,6 +31,7 @@ const PostsList: React.FC = () => {
       price: 72,
     },
     {
+      _id: '2',
       title: "Staycity Aparthotels Deptford Bridge Station",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F1.png&w=384&q=75",
@@ -39,6 +42,7 @@ const PostsList: React.FC = () => {
       price: 85,
     },
     {
+      _id: '3',
       title: "The Westin New York at Times Square West",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F2.png&w=384&q=75",
@@ -49,6 +53,7 @@ const PostsList: React.FC = () => {
       price: 72,
     },
     {
+      _id: '4',
       title: "The Montcalm At Brewery London City",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F3.png&w=384&q=75",
@@ -59,6 +64,7 @@ const PostsList: React.FC = () => {
       price: 79,
     },
     {
+      _id: '5',
       title: "Staycity Aparthotels Deptford Bridge Station",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F4.png&w=384&q=75",
@@ -69,6 +75,7 @@ const PostsList: React.FC = () => {
       price: 88,
     },
     {
+      _id: '6',
       title: "The Westin New York at Times Square West",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F5.png&w=384&q=75",
@@ -79,6 +86,7 @@ const PostsList: React.FC = () => {
       price: 92,
     },
     {
+      _id: '7',
       title: "The Westin New York at Times Square West",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F6.png&w=384&q=75",
@@ -89,6 +97,7 @@ const PostsList: React.FC = () => {
       price: 92,
     },
     {
+      _id: '8',
       title: "The Westin New York at Times Square West",
       image:
         "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F7.png&w=384&q=75",
