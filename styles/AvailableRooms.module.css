@@ -1,0 +1,154 @@
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #051036;
+  font-family: "JOST", sans-serif;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #051036;
+  font-family: "JOST", sans-serif;
+}
+
+.titlesContainer {
+  background-color: #13357b;
+  color: #fff;
+  display: flex;
+  font-weight: 700;
+  gap: 250px;
+}
+
+.start,
+.middle,
+.end {
+  display: flex;
+  gap: 50px;
+}
+
+
+.tableTitleLast {
+    margin-left: 40px;
+}
+
+.start {
+  gap: 128px;
+}
+
+.details {
+  display: flex;
+  gap: 28px;
+}
+
+.imageContainer {
+  width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.image {
+  width: 100%;
+}
+
+.priceTitle {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.feature {
+  display: flex;
+  gap: 10px;
+}
+
+.featureText,
+.featureIcon {
+  font-size: medium;
+  color: #051036;
+}
+
+.middleDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.middleInfo {
+  display: flex;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-right: 50px;
+}
+
+.benefit {
+  display: flex;
+  gap: 5px;
+  color: green;
+  font-size: small;
+}
+
+.personIcon {
+  font-size: 28px;
+  color: gray;
+}
+
+.wrapperMiddle {
+    margin-right: 30px;
+}
+
+.priceNights {
+    margin-right: 20px;
+}
+
+.price {
+    color: #051036;
+    font-weight: 600;
+    font-family: "JOST", sans-serif;
+}
+
+.priceCaption {
+  color: gray;
+}
+
+.select {
+    height: 40px;
+    width: 150px;
+}
+
+.option {
+    font-size: 15px !important;
+}
+
+.roomsCount {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.rightMiddle {
+    width: 200px;
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3554d1;
+    color: #fff;
+    border-radius: 8px;
+}

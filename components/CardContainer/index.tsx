@@ -11,14 +11,14 @@ const CardContainer = ({ post }: any) => {
           <Card.Img
             className={styles.image}
             variant='top'
-            src={post.image}
+            src={post.image.url}
             alt={post.title}
           />
         </div>
         <Card.Body className={`p-0 mt-3 d-flex flex-column gap-3`}>
-          <Card.Title className={styles.cardTitle}>{post.title}</Card.Title>
+          <Card.Title className={styles.cardTitle}>{post.name}</Card.Title>
           <Card.Subtitle className={styles.cardSubtitle}>
-            {post.city}
+            {post.location}
           </Card.Subtitle>
           <div className={`d-flex gap-2 align-items-center`}>
             <Card.Text className={styles.rating}>{post.rating}</Card.Text>
