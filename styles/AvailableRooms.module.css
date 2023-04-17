@@ -38,6 +38,7 @@
 
 .details {
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
 }
 
@@ -80,6 +81,7 @@
 
 .middleInfo {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .benefits {

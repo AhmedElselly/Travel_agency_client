@@ -121,3 +121,14 @@ a {
   background-color: #fff;
 }
 
+.MuiLinearProgress-root {
+  border-radius: 18px;
+}
+
+.MuiLinearProgress-bar {
+  background-color: #051036;
+}
+
+.MuiLinearProgress-determinate {
+  background-color: #05103634;
+}

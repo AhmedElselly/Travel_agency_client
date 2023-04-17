@@ -15,7 +15,7 @@ interface Post {
 
 type Posts = Array<Post>;
 
-const BestSeller: React.FC = () => {
+const BestSeller = () => {
   const tags = ["hotel", "tour", "activity", "car", "cruise", "flights"];
   const posts: Posts = [
     {

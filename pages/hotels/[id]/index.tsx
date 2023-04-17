@@ -12,8 +12,10 @@ import WeekendIcon from "@mui/icons-material/Weekend";
 import WifiIcon from "@mui/icons-material/Wifi";
 import SoupKitchenIcon from "@mui/icons-material/SoupKitchen";
 import HealthAndSafetyIcon from "@mui/icons-material/HealthAndSafety";
-import GradeIcon from '@mui/icons-material/Grade';
+import GradeIcon from "@mui/icons-material/Grade";
 import AvailableRooms from "@/components/AvailableRooms";
+import GuestReviewsTotal from "@/components/GuestReviewsTotal";
+import Reviews from "@/components/Reviews";
 
 const HotelShow: React.FC = () => {
   return (
@@ -21,7 +23,7 @@ const HotelShow: React.FC = () => {
       <Head>
         <title>Hotel show</title>
       </Head>
-      <Container className="mb-5">
+      <Container className='mb-5'>
         <div className={`${styles.top}`}>
           <div className={styles.left}>
             <div className={styles.title}>
@@ -41,7 +43,7 @@ const HotelShow: React.FC = () => {
             lg={6}
             md={12}
             sm={12}
-            style={{ borderRadius: 8, overflow: "hidden", maxHeight:715 }}
+            style={{ borderRadius: 8, overflow: "hidden", maxHeight: 715 }}
           >
             <img
               src='https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80'
@@ -153,22 +155,30 @@ const HotelShow: React.FC = () => {
               style={{ background: "rgba(0,0,0,0.1)", height: 1 }}
             ></div>
             <div className={styles.facilityContainer}>
-              <div className={`${styles.subtitle} mb-4`}>Most Popular Facilities</div>
+              <div className={`${styles.subtitle} mb-4`}>
+                Most Popular Facilities
+              </div>
               <Row className={`align-items-start`}>
                 <Col>
-                  <div className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}>
+                  <div
+                    className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}
+                  >
                     <div className={styles.facilityIcon}>
                       <SmokeFreeIcon />
                     </div>
                     <div className={styles.facilityText}>Non-smoking rooms</div>
                   </div>
-                  <div className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}>
+                  <div
+                    className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}
+                  >
                     <div className={styles.facilityIcon}>
                       <LocalParkingIcon />
                     </div>
                     <div className={styles.facilityText}>Parking</div>
                   </div>
-                  <div className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}>
+                  <div
+                    className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}
+                  >
                     <div className={styles.facilityIcon}>
                       <WeekendIcon />
                     </div>
@@ -176,19 +186,25 @@ const HotelShow: React.FC = () => {
                   </div>
                 </Col>
                 <Col>
-                  <div className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}>
+                  <div
+                    className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}
+                  >
                     <div className={styles.facilityIcon}>
                       <WifiIcon />
                     </div>
                     <div className={styles.facilityText}>Free WiFi</div>
                   </div>
-                  <div className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}>
+                  <div
+                    className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}
+                  >
                     <div className={styles.facilityIcon}>
                       <SoupKitchenIcon />
                     </div>
                     <div className={styles.facilityText}>Kitchen</div>
                   </div>
-                  <div className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}>
+                  <div
+                    className={`${styles.facility} d-flex gap-2 align-items-center justify-content-start mb-3`}
+                  >
                     <div className={styles.facilityIcon}>
                       <HealthAndSafetyIcon />
                     </div>
@@ -196,14 +212,22 @@ const HotelShow: React.FC = () => {
                   </div>
                 </Col>
               </Row>
-              <Container className="mt-5">
-                <div className={`${styles.highDemandContainer} d-flex align-items-center justify-content-start p-4 gap-3`}>
-                  <div className={`${styles.gradeIconContainer} d-flex align-items-center justify-content-center`}>
-                    <GradeIcon className={`${styles.gradeIcon}`}/>
+              <Container className='mt-5'>
+                <div
+                  className={`${styles.highDemandContainer} d-flex align-items-center justify-content-start p-4 gap-3`}
+                >
+                  <div
+                    className={`${styles.gradeIconContainer} d-flex align-items-center justify-content-center`}
+                  >
+                    <GradeIcon className={`${styles.gradeIcon}`} />
                   </div>
                   <div className={`${styles.highDemandTextContainer}`}>
-                    <div className={`${styles.highDemandText}`}>This property is in high demand!</div>
-                    <div className={`${styles.highDemandSubtext}`}>7 travelers have booked today.</div>
+                    <div className={`${styles.highDemandText}`}>
+                      This property is in high demand!
+                    </div>
+                    <div className={`${styles.highDemandSubtext}`}>
+                      7 travelers have booked today.
+                    </div>
                   </div>
                 </div>
               </Container>
@@ -247,8 +271,10 @@ const HotelShow: React.FC = () => {
           </Col>
         </Row>
         <div className={`${styles.title} mt-5`}>Available Rooms</div>
-        <AvailableRooms title={'Standard Twin Room'}/>
-        <AvailableRooms title={'Deluxe King Room'}/>
+        <AvailableRooms title={"Standard Twin Room"} />
+        <AvailableRooms title={"Deluxe King Room"} />
+        <GuestReviewsTotal />
+        <Reviews />
       </Container>
     </Fragment>
   );
