@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wrapper,
+.subFacility {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #051036;
+}
+
+.subText {
+  font-size: medium;
+}
+
+
+

@@ -3,6 +3,8 @@ import styles from "../../styles/Review.module.css";
 import { Avatar } from "@mui/material";
 import Moment from "react-moment";
 import { stringAvatar } from "../helpers";
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 
 const Review = () => {
   const createdAt = new Date(
@@ -61,6 +63,16 @@ const Review = () => {
             }
             alt={"amazing"}
           />
+        </div>
+      </div>
+      <div className={styles.reactions}>
+        <div className={`${styles.reaction} ${styles.reactionPressed}`}>
+          <ThumbUpIcon className={styles.likeIcon}/>
+          <div className={styles.likeText}>Helpful</div>
+        </div>
+        <div className={styles.reaction}>
+          <ThumbDownIcon className={styles.likeIcon}/>
+          <div className={styles.likeText}>Not Helpful</div>
         </div>
       </div>
     </div>

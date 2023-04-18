@@ -1,0 +1,10 @@
+.container {
+    margin-top: 50px;
+    font-family: "JOST", sans-serif;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #051036;
+}

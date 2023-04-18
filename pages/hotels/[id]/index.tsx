@@ -16,6 +16,7 @@ import GradeIcon from "@mui/icons-material/Grade";
 import AvailableRooms from "@/components/AvailableRooms";
 import GuestReviewsTotal from "@/components/GuestReviewsTotal";
 import Reviews from "@/components/Reviews";
+import Facilities from "@/components/Facilities";
 
 const HotelShow: React.FC = () => {
   return (
@@ -275,6 +276,7 @@ const HotelShow: React.FC = () => {
         <AvailableRooms title={"Deluxe King Room"} />
         <GuestReviewsTotal />
         <Reviews />
+        <Facilities />
       </Container>
     </Fragment>
   );

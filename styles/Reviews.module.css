@@ -1,0 +1,51 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: transparent;
+    color: #3554d1;
+    border: 1px solid #3554d1;
+    box-shadow: none;
+    margin-top: 30px;
+    padding-block: 15px;
+}
+
+.button:hover {
+    background-color: #3554d1;
+    color: #fff;
+}
+
+.replySection {
+    margin-top: 50px;
+}
+
+.titleWrapper {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: larger;
+    font-weight: 600;
+    color: #051036;
+}
+
+.column {
+    margin-bottom: 30px;
+}
+
+.ratingText {
+    font-weight: 600;
+    font-size: 15px;
+    color: #051036;
+}
+
+.formButton {
+    margin-top: 20px;
+    background-color: #3554d1;
+    padding: 12px 25px;
+}
+
+.formButton:hover {
+    background-color: #051036;
+}
