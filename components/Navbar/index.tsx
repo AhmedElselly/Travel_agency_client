@@ -30,6 +30,9 @@ const Navbar: React.FC = () => {
           Shop
         </Link>
       </div>
+      <Link href='/dashboard' className={styles.dashboard}>
+        Dashboard
+      </Link>
     </div>
   );
 };

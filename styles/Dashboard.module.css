@@ -1,0 +1,23 @@
+.wrapper {
+    margin-top: 150px;
+    font-family: "JOST", sans-serif;
+}
+
+
+.linkText {
+    /* font-size: larger; */
+    font-weight: 500;
+    /* color: gray; */
+}
+
+.linkActive {
+    color: #3554d1 !important;
+    /* font-size: larger; */
+    font-weight: 500;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #051036;
+}

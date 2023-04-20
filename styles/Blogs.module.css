@@ -1,0 +1,62 @@
+.container {
+  color: #051036;
+  font-family: "JOST", sans-serif;
+}
+
+.banner {
+  margin-top: 150px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-weight: 300;
+}
+
+.wrapper {
+  margin-top: 50px;
+}
+
+.searchTitle {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  width: 150px;
+  /* height: 150px; */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+}
+
+.cardTitle {
+    font-weight: 500;
+}
+
+.cardDate {
+    font-weight: 300;
+}
+
+.recentPosts {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}

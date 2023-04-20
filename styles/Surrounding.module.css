@@ -1,0 +1,35 @@
+.titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #051036;
+    font-family: "JOST", sans-serif;
+}
+
+.iconContainer {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #051036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 12px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: large;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+    border-bottom: 1px solid #05103623;
+    font-size: 14px;
+}

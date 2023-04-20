@@ -52,3 +52,10 @@
     border-radius: 8px;
     background-color: #fff;
 }
+
+.dashboard {
+    background-color: #051036;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+}

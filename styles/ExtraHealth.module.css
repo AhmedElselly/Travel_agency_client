@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    padding: 20px;
+    background-color:#ecc8c542;
+    color: #051036;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.imageContainer {
+    margin-left: 20px;
+}
+
+.title {
+    font-weight: 500;
+    font-family: "JOST", sans-serif;
+    font-size: larger;
+}
+
+.text {
+    font-size: 15px;
+}

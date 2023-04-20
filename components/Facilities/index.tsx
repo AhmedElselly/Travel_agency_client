@@ -15,15 +15,15 @@ const Facilities = () => {
     "reception services",
     "cleaning services",
   ]);
-  
+
   const generateIcon = () => {
     return <ShowerOutlinedIcon />;
   };
 
   const generateFacilities = () => {
-    return facilities?.map((facility) => {
+    return facilities?.map((facility, i) => {
       return (
-        <Col lg={4} md={4} sm={12} className='mb-4'>
+        <Col key={i} lg={4} md={4} sm={12} className='mb-4'>
           <Facility icon={generateIcon} text={facility} />
         </Col>
       );
@@ -35,27 +35,6 @@ const Facilities = () => {
       <div className={styles.title}>Facilities of This Hotel</div>
       <Row>
         {generateFacilities()}
-        {/* <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col>
-        <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col>
-        <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col>
-        <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col>
-        <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col>
-        <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col>
-        <Col lg={4} md={4} sm={12} className="mb-4">
-          <Facility icon={generateIcon} text={'bathroom'} />
-        </Col> */}
       </Row>
     </Container>
   );

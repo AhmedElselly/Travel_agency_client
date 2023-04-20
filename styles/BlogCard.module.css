@@ -1,0 +1,34 @@
+.container {
+  color: #051036;
+  font-family: "JOST", sans-serif;
+}
+
+.imageContainer {
+  max-width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.date {
+  margin-top: 15px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.title {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+@media screen and (max-width: 767px) {
+  .imageContainer {
+    max-width: fit-content;
+  }
+}

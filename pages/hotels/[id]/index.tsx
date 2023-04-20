@@ -17,6 +17,8 @@ import AvailableRooms from "@/components/AvailableRooms";
 import GuestReviewsTotal from "@/components/GuestReviewsTotal";
 import Reviews from "@/components/Reviews";
 import Facilities from "@/components/Facilities";
+import ExtraHealth from "@/components/ExtraHealth";
+import HotelSurroundings from "@/components/HotelSurroundings";
 
 const HotelShow: React.FC = () => {
   return (
@@ -277,6 +279,8 @@ const HotelShow: React.FC = () => {
         <GuestReviewsTotal />
         <Reviews />
         <Facilities />
+        <ExtraHealth />
+        <HotelSurroundings />
       </Container>
     </Fragment>
   );
