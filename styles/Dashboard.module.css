@@ -1,23 +1,54 @@
-.wrapper {
-    margin-top: 150px;
-    font-family: "JOST", sans-serif;
+.container {
+  overflow: hidden;
+  padding-bottom: 200px;
 }
 
+.wrapper {
+  margin-top: 150px;
+  font-family: "JOST", sans-serif;
+  color: #051036;
+}
 
 .linkText {
-    /* font-size: larger; */
-    font-weight: 500;
-    /* color: gray; */
+  /* font-size: larger; */
+  font-weight: 500;
+  /* color: gray; */
 }
 
 .linkActive {
-    color: #3554d1 !important;
-    /* font-size: larger; */
-    font-weight: 500;
+  color: #3554d1 !important;
+  font-weight: 500;
 }
 
 .title {
-    font-size: xx-large;
-    font-weight: 600;
-    color: #051036;
+  font-size: xx-large;
+  font-weight: 600;
+  color: #051036;
+}
+
+.feCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -1px 1px 6px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 6px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 6px -2px rgba(0, 0, 0, 0.75);
+  max-width: 20rem;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.feTitle {
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.total {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.feDescription {
+  
+  text-transform: capitalize;
 }

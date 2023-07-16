@@ -1,49 +1,121 @@
 import React from "react";
 import styles from "@/styles/Dashboard.module.css";
-import { Col, Row } from "react-bootstrap";
-import ExploreIcon from '@mui/icons-material/Explore';
-import MonitorIcon from '@mui/icons-material/Monitor';
-import TurnedInIcon from '@mui/icons-material/TurnedIn';
-import SettingsIcon from '@mui/icons-material/Settings';
-import LogoutIcon from '@mui/icons-material/Logout';
-import Link from "next/link";
+import { Col, Container, Row } from "react-bootstrap";
+import DashboardContainer from "@/components/DashboardContainer";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: "top",
+    },
+    title: {
+      display: true,
+      text: "Test",
+    },
+  },
+};
+
+const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
 const Dashboard = () => {
-  return (
-    <div className={`${styles.container}`}>
-      <Row className={`${styles.wrapper}`}>
-        <Col md={2} lg={2} sm={3}>
-          <Link href='/dashboard' className={`${styles.linkActive} d-flex align-items-center gap-2 py-3 px-4 ms-2`}>
-						<ExploreIcon sx={{color: '#3554d1'}}/>
-						<div className={styles.linkActive}>Dashboard</div>
-					</Link>
-          <Link href='/dashboard' className={`${styles.link} d-flex align-items-center gap-2 py-3 px-4 ms-2`}>
-						<MonitorIcon sx={{color: '#3554d1'}}/>
-						<div className={styles.linkText}>Booking history</div>
-					</Link>
-          <Link href='/dashboard' className={`${styles.link} d-flex align-items-center gap-2 py-3 px-4 ms-2`}>
-						<TurnedInIcon sx={{color: '#3554d1'}}/>
-						<div className={styles.linkText}>Wishlist</div>
-					</Link>
-          <Link href='/dashboard' className={`${styles.link} d-flex align-items-center gap-2 py-3 px-4 ms-2`}>
-						<SettingsIcon sx={{color: '#3554d1'}}/>
-						<div className={styles.linkText}>Settings</div>
-					</Link>
-          <Link href='/dashboard' className={`${styles.link} d-flex align-items-center gap-2 py-3 px-4 ms-2`}>
-						<LogoutIcon sx={{color: '#3554d1'}}/>
-						<div className={styles.linkText}>Logout</div>
-					</Link>
+  const features = [
+    {
+      title: "pending",
+      total: 12800,
+      description: "total pendings",
+      icon: "https://gotrip-next.vercel.app/img/dashboard/icons/1.svg",
+    },
+    {
+      title: "earnings",
+      total: 14200,
+      description: "total earnings",
+      icon: "https://gotrip-next.vercel.app/img/dashboard/icons/2.svg",
+    },
+    {
+      title: "bookings",
+      total: 8100,
+      description: "total hotel bookings",
+      icon: "https://gotrip-next.vercel.app/img/dashboard/icons/3.svg",
+    },
+    {
+      title: "services",
+      total: 22786,
+      description: "total bookable services",
+      icon: "https://gotrip-next.vercel.app/img/dashboard/icons/4.svg",
+    },
+  ];
+
+  function getRandomArbitrary(min: number, max: number) {
+    return Math.random() * (max - min) + min;
+  }
+
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Dataset 1",
+        data: labels.map(() => getRandomArbitrary(-1000, 1000)),
+        borderColor: "rgb(255, 99, 132)",
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+    ],
+  };
+  const generateFeatures = () => {
+    return features?.map((feature, i) => {
+      return (
+        <Col key={i} md={3} lg={3} sm={12} className={styles.feCard}>
+          <div className={styles.left}>
+            <div className={styles.feTitle}>{feature.title}</div>
+            <div className={styles.total}>${feature.total.toLocaleString('en-US')}</div>
+            <div className={styles.feDescription}>{feature.description}</div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.iconContainer}>
+              <img src={feature.icon} className={styles.icon} />
+            </div>
+          </div>
         </Col>
-				{/* CONTENT OF DASHBOARD */}
-        <Col md={9} lg={9} sm={12}>
-					<div className={`${styles.title}`}>Dashboard</div>
-					<div className={`${styles.subtitle} text-muted`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-					<Row className={`mt-5`}>
-						
-					</Row>
-				</Col>
-      </Row>
-    </div>
+      );
+    });
+  };
+
+  return (
+    <DashboardContainer>
+      <div className={styles.childrenContainer}>
+        <div className={`${styles.title}`}>Dashboard</div>
+        <div className={`text-muted`}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+        <Row className={`mt-5 gap-4`}>{generateFeatures()}</Row>
+        <Row>
+          <Col md={8} lg={8} sm={12}>
+            <Line options={options} data={data} />
+          </Col>
+        </Row>
+      </div>
+    </DashboardContainer>
   );
 };
 

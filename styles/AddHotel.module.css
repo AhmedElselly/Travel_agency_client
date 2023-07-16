@@ -1,0 +1,32 @@
+.title {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: rgba(0,0,0,0.5)
+}
+
+.container {
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.tabs {
+    display: flex;
+    gap: 50px;
+}
+
+.tab {
+    font-size: large;
+    font-weight: 500;
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;    
+}
+
+.formTitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: 500;
+}

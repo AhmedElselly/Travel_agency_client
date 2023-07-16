@@ -5,7 +5,9 @@ import CardContainer from "../CardContainer";
 
 interface Post {
   title: string;
-  image: string;
+  image: {
+    url: string;
+  };
   city: string;
   rating: number;
   state: string;
@@ -20,8 +22,9 @@ const BestSeller = () => {
   const posts: Posts = [
     {
       title: "The Montcalm At Brewery London City",
-      image:
-        "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      image: {
+        url: "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      },
       city: "Westminster Borough, London",
       rating: 4.7,
       state: "Exceptional",
@@ -30,8 +33,9 @@ const BestSeller = () => {
     },
     {
       title: "Staycity Aparthotels Deptford Bridge Station",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F1.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F1.png&w=384&q=75",
+      },
       city: "Ciutat Vella, Barcelona",
       rating: 4.8,
       state: "Exceptional",
@@ -40,8 +44,9 @@ const BestSeller = () => {
     },
     {
       title: "The Westin New York at Times Square West",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F2.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F2.png&w=384&q=75",
+      },
       city: "Manhattan, New York",
       rating: 4.7,
       state: "Exceptional",
@@ -50,8 +55,9 @@ const BestSeller = () => {
     },
     {
       title: "The Montcalm At Brewery London City",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F3.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F3.png&w=384&q=75",
+      },
       city: "Westminster Borough, London",
       rating: 4.7,
       state: "Exceptional",
@@ -60,8 +66,9 @@ const BestSeller = () => {
     },
     {
       title: "Staycity Aparthotels Deptford Bridge Station",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F4.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F4.png&w=384&q=75",
+      },
       city: "Ciutat Vella, Barcelona",
       rating: 4.7,
       state: "Exceptional",
@@ -70,8 +77,9 @@ const BestSeller = () => {
     },
     {
       title: "The Westin New York at Times Square West",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F5.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F5.png&w=384&q=75",
+      },
       city: "Manhattan, New York",
       rating: 4.9,
       state: "Exceptional",
@@ -80,8 +88,9 @@ const BestSeller = () => {
     },
     {
       title: "The Westin New York at Times Square West",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F6.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F6.png&w=384&q=75",
+      },
       city: "Manhattan, New York",
       rating: 4.9,
       state: "Exceptional",
@@ -90,8 +99,9 @@ const BestSeller = () => {
     },
     {
       title: "The Westin New York at Times Square West",
-      image:
-        "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F7.png&w=384&q=75",
+      image: {
+        url: "https://gotrip-next.vercel.app/_next/image?url=%2Fimg%2Fhotels%2F7.png&w=384&q=75",
+      },
       city: "Manhattan, New York",
       rating: 4.9,
       state: "Exceptional",

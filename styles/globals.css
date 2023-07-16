@@ -132,3 +132,7 @@ a {
 .MuiLinearProgress-determinate {
   background-color: #05103634;
 }
+
+label {
+  color: #697488;
+}
